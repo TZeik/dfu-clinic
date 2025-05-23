@@ -1,0 +1,21 @@
+{
+  "name": "dfu-clinic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "yarn workspace @dfu-clinic/web dev",
+    "mobile": "yarn workspace @dfu-clinic/mobile start",
+    "api": "yarn workspace @dfu-clinic/api dev",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
